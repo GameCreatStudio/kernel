@@ -21,7 +21,7 @@ on:
       kernel_version:
         description: "Select kernel version"
         required: false
-        default: "6.1.y"
+        default: "6.6.y"
         type: choice
         options:
           - 5.4.y
@@ -92,14 +92,15 @@ on:
       kernel_sign:
         description: "Set the kernel custom signature"
         required: false
-        default: "-flippy"
+        default: "-MaxCrazy1101"
         type: choice
         options:
           - -flippy
           - -QXY716
+          - -MaxCrazy1101
 
 env:
-  TZ: America/New_York
+  TZ: Asia/Shanghai
 
 jobs:
   build:
